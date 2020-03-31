@@ -17,7 +17,7 @@ int main() {
 	cin >> n;
 	buscarMatriz_On²(m,8,n);
 
-
+	
 	system("Pause");
 	return 0;
 }
@@ -73,19 +73,3 @@ void buscarMatriz_On²(int m[][8], int sizeMatriz, int valor) {
 	}
 }
 
-void buscarMatrizN_log_N(int m[][8], int sizeMatriz,int inicio, int fim, int valor) {
-// n log n com busca binária//
-	int meio = inicio + fim;
-	int j = fim + 1;
-	cout << "MATRIZ 1(1/2)" << ::endl;
-	for (int i = meio; i < sizeMatriz; i++) {
-		if (m[i][j] == valor && j < sizeMatriz){
-			cout << " Valor: " << valor << " linha: "<< i << "coluna: "<< j << ::endl;
-		}
-		
-	}
-	cout << "MATRIZ 2(2/2)" << ::endl;
-	for (size_t i = 0; i < sizeMatriz; i++){
-		
-	}
-}
